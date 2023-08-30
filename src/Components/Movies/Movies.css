@@ -1,0 +1,89 @@
+
+.movieMaindiv{
+    width: 85%;
+     margin: auto;
+     display: flex;
+     margin-top: 50px;
+     /* background-color: #F5F5F5; */
+
+   }
+   .FilterDivMumbai{
+    width: 30%;
+    display: flex;
+   }
+   .MoviinMumbaiDiv{
+    width: 70%;
+  
+   }
+
+   .FiltersMumbai{
+    margin: 20px 20px 30px 0px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   .movieheading{
+    margin: 20px 0px 30px 0px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   .allbtnslangagae{
+    display: flex;
+     gap: 12px;
+     flex-wrap: wrap; 
+     margin-bottom: 30px;
+
+   }
+   .buttonShortLangauge{
+    color:#DC354B;
+     font-size: 12px;
+     border-radius: 16px;
+     padding: 12px;
+     border:1px solid gray;
+     background-color: #fff;
+     cursor: pointer;
+   }
+
+.comingsoonmaindiv{
+  display: flex;     
+  justify-content: space-between;
+  background-color: #fff;
+  height: 80px;
+  justify-items: center;
+  align-items: center;
+  border-radius: 6px;
+  margin: 10px;
+  }
+  .comingsoon{
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .explorebtn{
+    margin-right: 10px;
+    background: none;
+    color: #DC354B;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+   .mumbaiAllImages{
+    display: flex;
+    flex-wrap: wrap;
+    gap:33px;
+    margin-top:30px ;
+
+   }
+   .mubaiImages{
+    width: 190px;
+    border-radius: 15px;
+    cursor: pointer;
+   }
+   .Cardpara{
+    width: 190px;
+     cursor: pointer;
+     margin-left: 10px;
+   }

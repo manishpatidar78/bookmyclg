@@ -1,0 +1,42 @@
+.allofferscard{
+     display: flex;
+     flex-wrap: wrap;
+     height: 2800px;
+     background-color:#F2F2F2;
+}
+.div{
+     width: 100%;
+
+}
+.offerImg{
+     width: 240px;
+     cursor: pointer;
+     border-radius: 7px 7px 0px 0px;
+}
+
+.offerPara{
+width: 200px;
+margin-top: 20px;
+margin-bottom: 20px;
+cursor: pointer;
+margin-left:  5px;
+
+}
+.cards{
+     width: 80%;
+     margin-left: 10%;
+     margin-right: 10%;
+     margin-top: 20px;
+     display: flex;
+     flex-direction: row;
+     gap: 20px;
+     background-color: #fff;
+}
+.card{
+     /* border: 2px solid black; */
+     border-radius: 5px;
+     box-shadow: 3px 5px 6px  1px #9e9c9c;
+     background-color: #fff;
+     border-radius: 7px;
+      
+}

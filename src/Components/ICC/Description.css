@@ -1,0 +1,39 @@
+.page-shower{
+     background-color:#FFFFFF ;
+     height: 50px;
+ }
+ 
+ .page-shower h4{
+     color: #979393e7;
+     padding: 15px;
+     font-size: 13px;
+     font-weight: 500;
+     margin-left: 3%;
+ }
+ 
+ .page-shower a{
+     text-decoration: none;
+     color: #686767f3;
+     margin-left: 4px;
+     margin-right: 4px;
+ }
+
+ .point-para {
+    
+     background-color: #F2F2F2;
+     
+ }
+ 
+ .point-para p {
+     margin-left: 4%;
+     margin-right: 4%;
+     font-size: 14px;
+     font-weight: 400;
+ }
+ 
+ .paragraph a{
+     margin-left: 4px;
+     color: rgb(182, 4, 4);
+     font-size:14px ;
+     text-decoration: none;
+ }
