@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import "./Movies.css"
 import MovieCarosoul from '../Carosoul/MovieCarosoul'
@@ -130,6 +130,16 @@ const MoviesData = [
   ]
 
 function Movies() {
+  const [activeBtn, setActivebtn] = useState([false,false,false,false,false,false,false,false,false,false,false,false,false]);
+  function multiplestate(index){
+   const newActiveBtn = activeBtn.map((element , i)=>{
+      if(index === i){
+        return !element;
+      }
+      return false;
+    });
+    setActivebtn(newActiveBtn);
+  }
   return (
 
     <>
@@ -142,19 +152,24 @@ function Movies() {
       </div>
       <div className='MoviinMumbaiDiv'>
         <h2 className='movieheading'>Movie In Mumbai</h2>
-        <div className='allbtnslangagae'>
-               <button className='buttonShortLangauge' type="button">English</button>
-               <button className='buttonShortLangauge' type="button">Hindi</button>
-               <button className='buttonShortLangauge' type="button">Japannese</button>
-               <button className='buttonShortLangauge' type="button">malyalam</button>
-               <button className='buttonShortLangauge' type="button">Marathi</button>
-               <button className='buttonShortLangauge' type="button">Gujrati</button>
-               <button className='buttonShortLangauge' type="button">Kannada</button>
-               <button className='buttonShortLangauge' type="button">Multi langauge</button>
-               <button className='buttonShortLangauge' type="button">Punjabi</button>
-               <button className='buttonShortLangauge' type="button">Tamil</button>
-               <button className='buttonShortLangauge' type="button">Telugu</button>
-               
+        <div>
+          <section className='allbtnslangagae'>
+
+               <button className={activeBtn[0] ? `moviesBtn movieActivebtn`:`moviesBtn`} type="button" onClick={()=>{multiplestate(0)}} >English</button>
+               <button className={activeBtn[1] ? `moviesBtn movieActivebtn`:`moviesBtn`} type="button" onClick={()=>{multiplestate(1)}} >Hindi</button>
+               <button className={activeBtn[2] ? `moviesBtn movieActivebtn`:`moviesBtn`} type="button" onClick={()=>{multiplestate(2)}} >Marathi</button>
+               <button className={activeBtn[3] ? `moviesBtn movieActivebtn`:`moviesBtn`} type="button" onClick={()=>{multiplestate(3)}} >Tamil</button>
+               <button className={activeBtn[4] ? `moviesBtn movieActivebtn`:`moviesBtn`} type="button" onClick={()=>{multiplestate(4)}} >Japannese</button>
+               <button className={activeBtn[5] ? `moviesBtn movieActivebtn`:`moviesBtn`} type="button" onClick={()=>{multiplestate(5)}} >malyalam</button>
+               <button className={activeBtn[6] ? `moviesBtn movieActivebtn`:`moviesBtn`} type="button" onClick={()=>{multiplestate(6)}} >Telugu</button>
+               <button className={activeBtn[7] ? `moviesBtn movieActivebtn`:`moviesBtn`} type="button" onClick={()=>{multiplestate(7)}} >Kannada</button>
+               <button className={activeBtn[8] ? `moviesBtn movieActivebtn`:`moviesBtn`} type="button" onClick={()=>{multiplestate(8)}} >Garhwali</button>
+               <button className={activeBtn[9] ? `moviesBtn movieActivebtn`:`moviesBtn`} type="button" onClick={()=>{multiplestate(9)}} >Gujrati</button>
+               <button className={activeBtn[10] ? `moviesBtn movieActivebtn`:`moviesBtn`} type="button" onClick={()=>{multiplestate(10)}} >Korean</button>
+               <button className={activeBtn[11] ? `moviesBtn movieActivebtn`:`moviesBtn`} type="button" onClick={()=>{multiplestate(11)}} >Multi langauge</button>
+               <button className={activeBtn[12] ? `moviesBtn movieActivebtn`:`moviesBtn`} type="button" onClick={()=>{multiplestate(12)}} >Odia</button>
+               <button className={activeBtn[13] ? `moviesBtn movieActivebtn`:`moviesBtn`} type="button" onClick={()=>{multiplestate(13)}} >Punjabi</button>
+          </section>    
            </div>
            <div className="comingsoonmaindiv">
             <div>

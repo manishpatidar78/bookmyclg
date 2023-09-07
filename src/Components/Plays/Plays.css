@@ -31,22 +31,26 @@
 .activities{
      margin: 20px 0px 30px 0px;
 }
-.buttonShort{
-     color:#DC354B;
-     font-size: 12px;
-     border-radius: 20px;
-     padding: 9px;
-     border:1px solid gray;
-     background-color: #fff;
-     cursor: pointer;
-}
-.allbtns{
+.btn_section{
      display: flex;
-     gap: 9px;
-     flex-wrap: wrap;
-     margin: 10px;
+     gap: 20px;
+     margin: 20px;
+ }
+
+.playBtn{
+     padding: 5px 5px;
+    width: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid gray;
 
 }
+.activePlayBtn{
+     background-color: #DC354B;
+     color: #fff;
+     border: none;
+}
+
 h2{
      font-size: 24px;
      font-weight: 700;

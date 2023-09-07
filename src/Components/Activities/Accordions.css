@@ -1,4 +1,35 @@
-/* .AccordianDate{
+
+.heading1{
      display: flex;
      justify-content: space-between;
-} */
+}
+.accordionSummaery{
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+}
+.datebtns,.categorybtns,
+.moreFilterbtns,
+.moreFilterbtns,
+.priceFilterbtns{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     gap: 10px;
+}
+.btns{
+     padding: 10px;
+     cursor: pointer;
+     color: red;
+}
+.Browsebtn{
+     border: 2px solid red;
+     border-radius: 5px;
+     color: red;
+     width: 98%;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     margin-top: 10px;
+     font-size: 15px;
+     cursor: pointer;
+}

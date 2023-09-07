@@ -35,7 +35,7 @@
      margin-bottom: 30px;
 
    }
-   .buttonShortLangauge{
+   .moviesBtn{
     color:#DC354B;
      font-size: 12px;
      border-radius: 16px;
@@ -44,7 +44,11 @@
      background-color: #fff;
      cursor: pointer;
    }
-
+.moviesBtn:hover , .movieActivebtn{
+  background-color: #DC354B;
+  color: #fff;
+  border: none;
+}
 .comingsoonmaindiv{
   display: flex;     
   justify-content: space-between;

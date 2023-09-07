@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './Sports.css'
 
 
@@ -138,6 +138,15 @@ const sportsImages = [
 ];
 
 export default function Sports(){
+  const [activeBtn, setActivebtn] = useState([false,false,false,false,false,false,false,false])
+  function multiplestate(index){
+    const newActiveBtn = activeBtn.map((element, i)=>{
+      if(index === i){
+        return !element;
+      }return false;
+    })
+    setActivebtn(newActiveBtn);
+  }
   return(
     <>
     <div className='maindivs'>
@@ -151,17 +160,17 @@ export default function Sports(){
           </div>
            <div className='Activitiesdiv'>
            <h2 className='activities'>Sports In Mumbai</h2>
-             <div className='allbtns'>
-               <button className='buttonShort' type="button">Cricket</button>
-               <button className='buttonShort' type="button">Online Games</button>
-               <button className='buttonShort' type="button">Chess</button>
-               <button className='buttonShort' type="button">Running</button>
-               <button className='buttonShort' type="button">E-Sports</button>
-               <button className='buttonShort' type="button">Cycling</button>
-               <button className='buttonShort' type="button">Motorsports</button>
-               <button className='buttonShort' type="button">Online Sports</button>
+             <section className='btn_section'>
+               <button className={activeBtn[0] ? `sportBtn activeSportBtn`: `sportBtn`} onClick={()=>{multiplestate(0)}} >Cricket</button>
+               <button className={activeBtn[1] ? `sportBtn activeSportBtn`: `sportBtn`} onClick={()=>{multiplestate(1)}} >Online Games</button>
+               <button className={activeBtn[2] ? `sportBtn activeSportBtn`: `sportBtn`} onClick={()=>{multiplestate(2)}} >Chess</button>
+               <button className={activeBtn[3] ? `sportBtn activeSportBtn`: `sportBtn`} onClick={()=>{multiplestate(3)}} >Running</button>
+               <button className={activeBtn[4] ? `sportBtn activeSportBtn`: `sportBtn`} onClick={()=>{multiplestate(4)}} >E-Sports</button>
+               <button className={activeBtn[5] ? `sportBtn activeSportBtn`: `sportBtn`} onClick={()=>{multiplestate(5)}} >Cycling</button>
+               <button className={activeBtn[6] ? `sportBtn activeSportBtn`: `sportBtn`} onClick={()=>{multiplestate(6)}} >Motorsports</button>
+               <button className={activeBtn[7] ? `sportBtn activeSportBtn`: `sportBtn`} onClick={()=>{multiplestate(7)}}>Online Sports</button>
                
-           </div>
+           </section>
           <div className='allImages'>
           {
              sportsImages.map((x) =>{
